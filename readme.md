@@ -8,3 +8,5 @@ http://www.golang-book.com/
  * `*` pointer, followed by type, also used to dereference a pointer
  * `new` can be used to create a pointer
  * `&` find the address of a variable, `&x` returns a pointer to a type, e.g. `*int`
+ * "anonymous fields"/"embedded types" can be used to achieve subclassing
+ * compose functionality with Interfaces, Interface defines a method set (list of methods)
