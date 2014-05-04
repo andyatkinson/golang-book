@@ -10,3 +10,10 @@ http://www.golang-book.com/
  * `&` find the address of a variable, `&x` returns a pointer to a type, e.g. `*int`
  * "anonymous fields"/"embedded types" can be used to achieve subclassing
  * compose functionality with Interfaces, Interface defines a method set (list of methods)
+ * concurrency with goroutines and channels
+ * channels `c <- "ping"` means send string "ping" to channel c
+ * `msg := <- c` means receive message on channel c and assign it to msg
+ * channels can be bi-directional, or only send, or only receive
+ * `select` keyboard can be used like case statement with channels
+ * normal channels are sychronous
+ * buffered channel is asynchronous, sending or receiving does not wait unless the channel is already full
