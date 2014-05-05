@@ -17,3 +17,5 @@ http://www.golang-book.com/
  * `select` keyboard can be used like case statement with channels
  * normal channels are sychronous
  * buffered channel is asynchronous, sending or receiving does not wait unless the channel is already full
+ * [packages information](http://www.golang-book.com/11), `src` and `pkg` directories are required, set `GOPATH`
+ * importing a package, can create an alias
