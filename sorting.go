@@ -1,6 +1,6 @@
 package main
 
-import ("fmt" : "sort")
+import ("fmt" ; "sort")
 
 type Person struct {
   Name string
@@ -11,4 +11,23 @@ type ByName []Person
 
 func (this ByName) Len() int {
   return len(this)
+}
+
+// i and j variables of type int
+func (this ByName) Less(i, j int) bool {
+  return this[i].Name < this[j].Name
+}
+
+func (this ByName) Swap(i, j int) {
+  this[i], this[j] = this[j], this[i]
+}
+
+func main() {
+  kids := []Person {
+      {"Jill",9},
+      {"Jack",10},
+  }
+
+  sort.Sort(ByName(kids))
+  fmt.Println(kids)
 }
